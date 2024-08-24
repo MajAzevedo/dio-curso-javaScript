@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #5e0878, #085078, #4ca59b, #1fa194);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 8s ease-in-out infinite;
+    position: relative;
+
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10%;
+    border: 2px solid rgb(104, 114, 251);
+    background-color: rgb(82, 252, 235);
+    color: rgb(16, 16, 16);
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+#camposLista {
+
+    font-size: 18pt;
+    font-weight: bold;
+
+}
+
+@keyframes backgroundTransition {
+    0%{
+        background-position: 0% 80%;
+    }
+    50%{
+        background-position: 80% 100%;
+    }
+    100%{
+        background-position: 0% 90%;
+    }
+}
+
+#listaTarefas {
+    font-size: 18px;
+    font-weight: bold;
+}  
+
+
+  :checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
